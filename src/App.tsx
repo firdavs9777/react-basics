@@ -1,6 +1,6 @@
 import React from 'react';
-import Test from '../src/components/firstTest';
 import './App.css';
+import Expenses from './components/Expenses/Expenses';
 
 function App() {
   const expenses = [
@@ -10,21 +10,7 @@ function App() {
   ];
   return (
     <div className="App">
-      <Test
-        title={expenses[0].title}
-        amount={expenses[0].amount}
-        date={expenses[0].date}
-      ></Test>
-      <Test
-        title={expenses[1].title}
-        amount={expenses[1].amount}
-        date={expenses[1].date}
-      ></Test>
-      <Test
-        title={expenses[2].title}
-        amount={expenses[2].amount}
-        date={expenses[2].date}
-      ></Test>
+      <Expenses items={expenses} />
     </div>
   );
 }
